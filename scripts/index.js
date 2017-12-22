@@ -8,6 +8,15 @@ var COLOR_BLACK = "#808080";
 var COLOR_GREEN = "#009000";
 var SPYMASTERING = false;
 
+function init_data() {
+    var val = document.getElementById('wordlist').value;
+    if (val === "2k") {
+        data = data_2k.slice();
+    } else {
+        data = data_400.slice();
+    }
+}
+
 function fire(){
     //get seed
     var seed = document.getElementById("seed").value;
@@ -16,6 +25,7 @@ function fire(){
     //clear words
     wordsSelected = [];
     teams = [];
+    init_data();
 
     //fire new board
     createNewGame();
@@ -126,11 +136,4 @@ document.getElementById('seed').onkeypress = function(e){
     }
 }
 
-document.getElementById('wordlist').onchange = function(e) {
-    var val = document.getElementById('wordlist').value;
-    if (val === "2k") {
-        data = data_2k;
-    } else {
-        data = data_400;
-    }
-}
+document.getElementById('wordlist').onchange = init_data;
