@@ -28,6 +28,7 @@ function fire(){
     init_data();
 
     //fire new board
+    SPYMASTERING = false;
     createNewGame();
     // document.getElementById("p1").innerHTML = wordsSelected;
 
@@ -86,7 +87,7 @@ function rgb2hex(rgb) {
 }
 
 function clicked(value){
-    console.log(`clicked: ${value} (${rgb2hex(document.getElementById(value).style.backgroundColor)})`);
+    console.log(`clicked: ${value} (${rgb2hex(document.getElementById(value).style.backgroundColor || "rgb(255,255,255)")})`);
     var word = wordsSelected[value];
     if ( !SPYMASTERING || rgb2hex(document.getElementById(value).style.backgroundColor) === COLOR_GREEN)
         document.getElementById(value).style.backgroundColor = teams[value];
