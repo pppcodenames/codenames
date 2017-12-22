@@ -7,7 +7,7 @@ html {
 	font-size : 1.5em;
 }
 
-button, input, span#first {
+button, input, span#first, select {
 	font-size : 1.3em;	
 }
 

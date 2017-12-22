@@ -124,4 +124,13 @@ document.getElementById('seed').onkeypress = function(e){
       fire();
       return false;
     }
-  }
+}
+
+document.getElementById('wordlist').onchange = function(e) {
+    var val = document.getElementById('wordlist').value;
+    if (val === "2k") {
+        data = data_2k;
+    } else {
+        data = data_400;
+    }
+}
