@@ -12,7 +12,10 @@ function init_data() {
     var val = document.getElementById('wordlist').value;
     if (val === "2k") {
         data = data_2k.slice();
-    } else {
+    } else if (val === "neopets") {
+        data = data_neopets.slice();
+    }
+    else {
         data = data_400.slice();
     }
 }
