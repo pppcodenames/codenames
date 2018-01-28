@@ -14,6 +14,8 @@ function init_data() {
         data = data_2k.slice();
     } else if (val === "neopets") {
         data = data_neopets.slice();
+    } else if (val === "combined") {
+        data = data_combined.slice();
     }
     else {
         data = data_400.slice();
@@ -139,5 +141,3 @@ document.getElementById('seed').onkeypress = function(e){
       return false;
     }
 }
-
-document.getElementById('wordlist').onchange = init_data;
