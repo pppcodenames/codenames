@@ -70,8 +70,6 @@ data_neopets.push(...[
     "NEOQUEST",
     "NPD",
     "PETPET",
-    "PLOT",
-    "POUND",
     "PREMIUM",
     "PURGE",
     "QUEST",
