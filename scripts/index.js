@@ -24,7 +24,7 @@ function init_data() {
 
 function fire(){
     //get seed
-    var seed = document.getElementById("seed").value;
+    var seed = document.getElementById("seed").value.replace(/ /g, "");
     Math.seedrandom(seed.toLowerCase());
 
     //clear words

@@ -3,102 +3,27 @@ var data_2k = ["ACCOUNT", "ACHIEVER", "ACOUSTICS", "ACT", "ACTION", "ACTIVITY", 
 var data_400 = ["AFRICA", "AGENT", "AIR", "ALIEN", "ALPS", "AMAZON", "AMBULANCE", "AMERICA", "ANGEL", "ANTARCTICA", "APPLE", "ARM", "ATLANTIS", "AUSTRALIA", "AZTEC", "BACK", "BALL", "BAND", "BANK", "BAR", "BARK", "BAT", "BATTERY", "BEACH", "BEAR", "BEAT", "BED", "BEIJING", "BELL", "BELT", "BERLIN", "BERMUDA", "BERRY", "BILL", "BLOCK", "BOARD", "BOLT", "BOMB", "BOND", "BOOM", "BOOT", "BOTTLE", "BOW", "BOX", "BRIDGE", "BRUSH", "BUCK", "BUFFALO", "BUG", "BUGLE", "BUTTON", "CALF", "CANADA", "CAP", "CAPITAL", "CAR", "CARD", "CARROT", "CASINO", "CAST", "CAT", "CELL", "CENTAUR", "CENTER", "CHAIR", "CHANGE", "CHARGE", "CHECK", "CHEST", "CHICK", "CHINA", "CHOCOLATE", "CHURCH", "CIRCLE", "CLIFF", "CLOAK", "CLUB", "CODE", "COLD", "COMIC", "COMPOUND", "CONCERT", "CONDUCTOR", "CONTRACT", "COOK", "COPPER", "COTTON", "COURT", "COVER", "CRANE", "CRASH", "CRICKET", "CROSS", "CROWN", "CYCLE", "CZECH", "DANCE", "DATE", "DAY", "DEATH", "DECK", "DEGREE", "DIAMOND", "DICE", "DINOSAUR", "DISEASE", "DOCTOR", "DOG", "DRAFT", "DRAGON", "DRESS", "DRILL", "DROP", "DUCK", "DWARF", "EAGLE", "EGYPT", "EMBASSY", "ENGINE", "ENGLAND", "EUROPE", "EYE", "FACE", "FAIR", "FALL", "FAN", "FENCE", "FIELD", "FIGHTER", "FIGURE", "FILE", "FILM", "FIRE", "FISH", "FLUTE", "FLY", "FOOT", "FORCE", "FOREST", "FORK", "FRANCE", "GAME", "GAS", "GENIUS", "GERMANY", "GHOST", "GIANT", "GLASS", "GLOVE", "GOLD", "GRACE", "GRASS", "GREECE", "GREEN", "GROUND", "HAM", "HAND", "HAWK", "HEAD", "HEART", "HELICOPTER", "HIMALAYAS", "HOLE", "HOLLYWOOD", "HONEY", "HOOD", "HOOK", "HORN", "HORSE", "HORSESHOE", "HOSPITAL", "HOTEL", "ICE", "ICE CREAM", "INDIA", "IRON", "IVORY", "JACK", "JAM", "JET", "JUPITER", "KANGAROO", "KETCHUP", "KEY", "KID", "KING", "KIWI", "KNIFE", "KNIGHT", "LAB", "LAP", "LASER", "LAWYER", "LEAD", "LEMON", "LEPRECHAUN", "LIFE", "LIGHT", "LIMOUSINE", "LINE", "LINK", "LION", "LITTER", "LOCH NESS", "LOCK", "LOG", "LONDON", "LUCK", "MAIL", "MAMMOTH", "MAPLE", "MARBLE", "MARCH", "MASS", "MATCH", "MERCURY", "MEXICO", "MICROSCOPE", "MILLIONAIRE", "MINE", "MINT", "MISSILE", "MODEL", "MOLE", "MOON", "MOSCOW", "MOUNT", "MOUSE", "MOUTH", "MUG", "NAIL", "NEEDLE", "NET", "NEW YORK", "NIGHT", "NINJA", "NOTE", "NOVEL", "NURSE", "NUT", "OCTOPUS", "OIL", "OLIVE", "OLYMPUS", "OPERA", "ORANGE", "ORGAN", "PALM", "PAN", "PANTS", "PAPER", "PARACHUTE", "PARK", "PART", "PASS", "PASTE", "PENGUIN", "PHOENIX", "PIANO", "PIE", "PILOT", "PIN", "PIPE", "PIRATE", "PISTOL", "PIT", "PITCH", "PLANE", "PLASTIC", "PLATE", "PLATYPUS", "PLAY", "PLOT", "POINT", "POISON", "POLE", "POLICE", "POOL", "PORT", "POST", "POUND", "PRESS", "PRINCESS", "PUMPKIN", "PUPIL", "PYRAMID", "QUEEN", "RABBIT", "RACKET", "RAY", "REVOLUTION", "RING", "ROBIN", "ROBOT", "ROCK", "ROME", "ROOT", "ROSE", "ROULETTE", "ROUND", "ROW", "RULER", "SATELLITE", "SATURN", "SCALE", "SCHOOL", "SCIENTIST", "SCORPION", "SCREEN", "SCUBA DIVER", "SEAL", "SERVER", "SHADOW", "SHAKESPEARE", "SHARK", "SHIP", "SHOE", "SHOP", "SHOT", "SINK", "SKYSCRAPER", "SLIP", "SLUG", "SMUGGLER", "SNOW", "SNOWMAN", "SOCK", "SOLDIER", "SOUL", "SOUND", "SPACE", "SPELL", "SPIDER", "SPIKE", "SPINE", "SPOT", "SPRING", "SPY", "SQUARE", "STADIUM", "STAFF", "STAR", "STATE", "STICK", "STOCK", "STRAW", "STREAM", "STRIKE", "STRING", "SUB", "SUIT", "SUPERHERO", "SWING", "SWITCH", "TABLE", "TABLET", "TAG", "TAIL", "TAP", "TEACHER", "TELESCOPE", "TEMPLE", "THEATER", "THIEF", "THUMB", "TICK", "TIE", "TIME", "TOKYO", "TOOTH", "TORCH", "TOWER", "TRACK", "TRAIN", "TRIANGLE", "TRIP", "TRUNK", "TUBE", "TURKEY", "UNDERTAKER", "UNICORN", "VACUUM", "VAN", "VET", "WAKE", "WALL", "WAR", "WASHER", "WASHINGTON", "WATCH", "WATER", "WAVE", "WEB", "WELL", "WHALE", "WHIP", "WIND", "WITCH", "WORM", "YARD"];
 
 var data_400_uniq = data_400.filter( word => !data_2k.includes(word) );
-var data_combined = data_2k.slice().concat(data_400_uniq);
+var data_combined = data_2k.concat(data_400_uniq);
 
-var data_neopets = data_400.slice().concat([ 
-    "AAA",
-    "AC",
-    "ADAM",
-    "ASPARAGUS",
-    "AUBERGINE",
-    "AUCTIONS",
-    "AUTOBUYING",
-    "AVATAR",
-    "BATTLEDOME",
-    "BGC",
-    "BOOCHI",
-    "BOP",
-    "BOROVAN",
-    "CANDYCHAN",
-    "CC",
-    "CHADLEY",
-    "CLIQUE",
-    "CLRAIK",
-    "CODESTONE",
-    "CUSTOMISE",
-    "DAILIES",
-    "DATING",
-    "DFMP",
-    "DON",
-    "DONNA",
-    "DTI",
-    "DUNG",
-    "EDITORIAL",
-    "EDNA",
-    "FAERIE",
-    "FAGHACKER",
-    "FOOD CLUB",
-    "FYORA",
-    "GADGADSBOGEN",
-    "GELERT",
-    "GHOUL CATCHERS",
-    "GIVEAWAYS",
-    "GOOBLAH",
-    "GUILD",
-    "HABITARIUM",
-    "HAGAN",
-    "IDB",
-    "ILLUSEN",
-    "JAZZ_INVINCIBLE",
-    "JELLY WORLD",
-    "JELLYNEO",
-    "JHUDORA",
-    "JUMPSTART",
-    "KADOATIE",
-    "KAIA",
-    "KASS",
-    "KEYQUEST",
-    "KIKO",
-    "LAWYERBOT",
-    "LUPE",
-    "MARAQUAN",
-    "MEEPITS",
-    "MSPP",
-    "MUTANT",
-    "NEOCASH",
-    "NEOMAIL",
-    "NEOPET",
-    "NEOPIAN TIMES",
-    "NEOQUEST",
-    "NPD",
-    "PETPET",
-    "PREMIUM",
-    "PURGE",
-    "QUEST",
-    "RAINBOW POOL",
-    "RANDOM EVENT",
-    "RESTOCKING",
-    "SCIENTOLOGY",
-    "SCRAPPY",
-    "SKARL",
-    "SLOTH",
-    "SNARKIE",
-    "STAMP",
-    "SUAP",
-    "TDMBGPOP",
-    "TOMBOLA",
-    "TROPHY",
-    "TYPING TERROR",
-    "UMMAGINE",
-    "USERLOOKUP",
-    "USUKI",
-    "VIACOM",
-    "WIBRETH",
-    "WRAITH",
-    "XANDRA",
-    "YOOYU",
-    "ZAFARA",
-    "ZDAP"
-]);
+var data_neopets;
+
+$(document).ready(function(){
+    $.ajax({
+        url: 'data/neo.txt',
+        dataType: 'text',
+        success: function ( data ) {
+            var dataList = data.trim().split("\n")
+                            .map( word => word.trim().toUpperCase() )
+                            .filter( word => !data_400.includes(word) )
+                            .filter( (w, i, t) => t.indexOf(w, i+1) < 0 ) // remove duplicates
+                            .sort();
+            data_neopets = data_400.concat(dataList);
+            $("option[value='neopets']").removeAttr('disabled');
+        },
+        error: function ( ) {
+            alert("Could not load Neopets wordlist. It is disabled.");
+        }
+    });
+});
 
 var data = data_400.slice();
